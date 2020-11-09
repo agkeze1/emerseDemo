@@ -1,21 +1,33 @@
 <!DOCTYPE html>
 <html style="height: 100%; overflow: hidden">
+  <style>
+    .container {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+    }
+  </style>
   <body style="height: 100%; margin: 0">
-    <iframe
-      id="myWidget"
-      src="https://human.biodigital.com/widget/?m=cochlear_implant&dk=15a12eb352688e6ab209885722c20f369a015714"
-      width="49%"
-      height="100%"
-    >
-    </iframe>
-    <iframe
-      id="myWidget"
-      src="https://human.biodigital.com/widget/?m=cochlear_implant&dk=15a12eb352688e6ab209885722c20f369a015714"
-      width="49%"
-      height="100%"
-    >
-    </iframe>
-    <!-- <iframe
+    <div class="container">
+      <iframe
+        id="myWidget"
+        src="https://human.biodigital.com/widget/?m=cochlear_implant&dk=15a12eb352688e6ab209885722c20f369a015714"
+        width="49%"
+        height="100%"
+        style="border-radius: 10% 25% 25% 10%"
+      >
+      </iframe>
+      <iframe
+        id="myWidget"
+        src="https://human.biodigital.com/widget/?m=cochlear_implant&dk=15a12eb352688e6ab209885722c20f369a015714"
+        width="49%"
+        height="100%"
+        style="border-radius: 25% 10% 10% 25%"
+      >
+      </iframe>
+      <!-- <iframe
       id="embedded-human"
       frameborder="0"
       width="49%"
@@ -25,6 +37,7 @@
       src="https://human.biodigital.com/viewer/?be=40xI&ui-info=true&ui-search=true&ui-reset=true&ui-fullscreen=true&ui-nav=true&ui-tools=true&ui-help=true&ui-chapter-list=false&ui-label-list=true&ui-anatomy-descriptions=false&ui-tutorial=false&ui-loader=bar&ui-whiteboard=true&ui-layers=true&disable-scroll=false&uaid=78RNX"
     >
     </iframe> -->
+    </div>
     <script src="https://developer.biodigital.com/builds/api/2/human-api.min.js"></script>
   </body>
 </html>
